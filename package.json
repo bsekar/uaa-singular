@@ -9,7 +9,7 @@
   },
   "scripts" : {
     "get-uaa" : "git clone -b develop https://github.com/cloudfoundry/uaa.git test/tmp/uaa",
-    "start-uaa" : "cd test/tmp/uaa && ./gradlew cargoStartLocal",
+    "start-uaa" : "cd test/tmp/uaa && ./gradlew cargoRunLocal &",
     "stop-uaa" : "cd test/tmp/uaa && ./gradlew cargoStopLocal",
     "start-singular-app" : "sh test/startHttpServer.sh",
     "stop-singular-app" : "kill $(cat test/tmp/httpServer.pid.tmp) && rm test/tmp/httpServer.pid.tmp",
